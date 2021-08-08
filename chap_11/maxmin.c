@@ -1,3 +1,8 @@
+/**
+ * @file
+ * @brief The program finds the highest and least values in an array of numbers 
+ */
+
 #include <stdio.h>
 
 #define N 10
