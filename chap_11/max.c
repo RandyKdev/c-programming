@@ -16,6 +16,8 @@ int main(void) {
     int *p = max(&i, &j);
 
     printf("The bigger element is %d\n", *p);
+
+    return 0;
 }
 
 int *max(int *a, int *b) {

@@ -11,7 +11,10 @@ int main() {
     long int_part;
     double frac_part;
     decompose(3.145893, &int_part, &frac_part);
+    
     printf("Int part = %ld \nFractional part = %f\n", int_part, frac_part);
+    
+    return 0;
 }
 
 void decompose(double x, long *int_part, double *frac_part) {
