@@ -28,7 +28,7 @@ void find_closest_flight(int desired_time, int *departure_time, int *arrival_tim
 
     int temp;
 
-    for(int i  = 1; i < 8; i++) {
+    for(int i = 1; i < 8; i++) {
         temp = (int) fabs(desired_time - DEPARTURE_TIMES[i]); 
         if(temp < difference) {
             difference = temp;
