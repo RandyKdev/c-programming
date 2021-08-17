@@ -22,7 +22,7 @@ int main() {
         if(firstDay < secondDay) isFirstDateEarlier = true;
         else isFirstDateEarlier = false;
     } else {
-        printf("The two dates are the same");
+        printf("The two dates are the same\n");
         return 1;
     }
 
