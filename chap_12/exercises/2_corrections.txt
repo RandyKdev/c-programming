@@ -1,0 +1,16 @@
+middle = (low + high) / 2;
+
+middle, low and high are all pointers to certain values in an array
+
+PROBLEMS
+----------------------------------------------------------------------------
+
+- pointer to pointer addition is not allowed
+- pointer division not allowed
+- risk of `middle` pointing to fractional memory (like 10.3 in hex 😅)
+
+SOLUTIONS
+----------------------------------------------------------------------------
+
+- dereferencing, the statement becomes;
+    *middle = (*low + *high) / 2;
