@@ -7,7 +7,7 @@ PROBLEMS
 
 - pointer to pointer addition is not allowed
 - pointer division not allowed
-- risk of `middle` pointing to fractional memory (like 10.3 in hex 😅)
+- risk of `middle` pointing to fractional memory (like 10.5 in hex 😅)
 
 SOLUTIONS
 ----------------------------------------------------------------------------
