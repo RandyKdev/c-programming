@@ -1,0 +1,4 @@
+
+int temperature[7][24];
+
+search(temperature, 7 * 24, 32);
