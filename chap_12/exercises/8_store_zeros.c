@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include <assert.h>
 
 void store_zeros(int *a, int n) {
