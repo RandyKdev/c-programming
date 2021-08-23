@@ -9,7 +9,7 @@ void getMessage(char *s);
 bool palindrome(char *s);
 
 int main(void) {
-    char message[MAX + 1];
+    char message[MAX + 1]; // +1 for the nul character
 
     getMessage(message);
 
@@ -29,6 +29,7 @@ void getMessage(char *s) {
         if(!isalpha(c)) continue;
         *(s + i++) = tolower(c);
     }
+    
     *(s + i) = '\0';
 }
 

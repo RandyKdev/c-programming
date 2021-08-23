@@ -9,7 +9,7 @@ void getMessage(char *s);
 bool palindrome(char *s);
 
 int main(void) {
-    char message[MAX + 1];
+    char message[MAX + 1]; // +1 for the nul character
 
     getMessage(message);
 
@@ -36,6 +36,7 @@ void getMessage(char *s) {
 bool palindrome(char *s) {
     int length = strlen(s);
     for(char *i = s; i < s + (length / 2); i++) {
+        // i - s will output the integral difference btw them
         if(*i != *((s + length - 1) - (i - s))) 
             return false;
     }
