@@ -4,6 +4,22 @@
 
 #define MAX 100
 
+void readSentence(char *s, char *lastChar);
+void printSentenceBackwards(char *s);
+void printWord(char *s);
+
+
+int main(void) {
+    char sentence[MAX + 1];
+    char lastChar = '\0'; 
+
+    readSentence(sentence, &lastChar);
+    printSentenceBackwards(sentence);
+    printf("%c\n", lastChar);
+
+    return 0;
+}
+
 void readSentence(char *s, char *lastChar) {
     printf("Enter a sentence: ");
 
@@ -18,13 +34,6 @@ void readSentence(char *s, char *lastChar) {
         *i++ = c;
     }
     *i = '\0';
-}
-
-void printWord(char *s) {
-    printf(" ");
-    while(!isspace(*s) && *s != '\0') {
-        printf("%c", *s++);
-    }
 }
 
 void printSentenceBackwards(char *s) {
@@ -43,13 +52,9 @@ void printSentenceBackwards(char *s) {
     }
 }
 
-int main(void) {
-    char sentence[MAX + 1];
-    char lastChar = '\0';
-
-    readSentence(sentence, &lastChar);
-    printSentenceBackwards(sentence);
-    printf("%c\n", lastChar);
-
-    return 0;
+void printWord(char *s) {
+    printf(" ");
+    while(!isspace(*s) && *s != '\0') {
+        printf("%c", *s++);
+    }
 }
