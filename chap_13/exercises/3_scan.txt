@@ -1,0 +1,9 @@
+scanf("%d%s%d", &i, s, &j);
+
+assuming i and j are ints and s is an array of chars
+
+and the input is 12abc34 56def78
+
+i will be 12
+s will be abc34
+j will be 56
