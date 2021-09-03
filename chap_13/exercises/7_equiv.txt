@@ -1,0 +1,9 @@
+Which statement is not equivalent?
+
+a) *str = 0;
+b) str[0] = '\0';
+c) strcpy(str, "");
+d) strcat(str, "");
+
+The d is the odd one because it appends an empty string to an empty array of characters 
+which the length cant be identified so it wont necessarily start from the beginning
