@@ -1,0 +1,35 @@
+Identify which calls don't work and explain why:
+
+a) printf("%c", '\n'); - Correct
+- because the %c format specifier is for a character and '\n' is a character
+
+b) printf("%c", "\n"); - Not Correct
+ - because the format specifier %c is for a character but "\n" is a string literal
+
+c) printf("%s", '\n'); - Not Correct
+ - becuase the format specifier %s is for a string literal or string variable but '\n' is a character
+
+d) printf("%s", "\n"); - Correct
+ - becuase the format specifier %s is for a string literal and "\n" is a string literal
+
+e) printf('\n'); - Not Correct
+ - because printf expects as first argument a parameter of type char * but '\n' is of type char
+
+f) printf("\n"); - Correct
+ - because printf expects a variable of type char * and "\n" is of type char *
+
+g) putchar('\n'); - Correct
+ - because putchar expects a character and '\n' is a character
+
+h) putchar("\n"); - Not Correct
+ - because putchar expects an argument of type char but "\n" is of type char *
+
+i) puts('\n'); - Not Correct
+ - because puts expects an argument of type char * but '\n' is of type char
+
+j) puts("\n"); - Correct
+ - becuase puts expects an argument of type char * and "\n" is of type char *
+
+k) puts(""); - Correct
+ - because "" is of type char * and puts expects an argument of that type and then prints a '\n' char
+ 
