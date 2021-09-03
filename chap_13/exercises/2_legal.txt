@@ -1,0 +1,16 @@
+char *p = "abc";
+
+Legal and/or Not Legal? explain.
+
+a) putchar(p); - Not Legal
+ - because p is of type char * and putchar expects an argument of type char
+
+b) putchar(*p); - Legal
+ - Output: a
+
+c) puts(p); - Legal
+ - Output: abc
+
+d) puts(*p); - Not Legal
+ - becuase *p is of type char but puts expects an argument of type char *
+ 
