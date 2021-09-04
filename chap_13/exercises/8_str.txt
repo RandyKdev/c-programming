@@ -1,0 +1,8 @@
+The value of the string str after the following statements are executed
+
+strcpy(str, "tire-bouchon");
+strcpy(&str[4], "d-or-wi");
+strcat(str, "red?");
+
+Answer:
+str will be "tired-or-wired?"
