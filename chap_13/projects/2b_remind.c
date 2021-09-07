@@ -22,10 +22,11 @@ int main(void) {
         scanf("%2d", &day);
         if(day == 0) break;
         if(day < 0 || day > 31) continue;
-        
-        fgets(time_str, 6, stdin);
 
         sprintf(day_str, "%2d", day);
+
+        fgets(time_str, 6, stdin);
+        
         read_line(msg_str, MSG_LEN);
 
         strcat(strcpy(combineDaysTime, day_str), time_str);
@@ -45,7 +46,7 @@ int main(void) {
         num_remind++;
     }
 
-    printf("\nDay Reminder\n");
+    printf("\nDay Time  Reminder\n");
     for(i = 0; i < num_remind; i++)
         printf(" %s\n", reminders[i]);
 
