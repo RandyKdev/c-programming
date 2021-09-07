@@ -40,8 +40,7 @@ int main(void) {
         for(j = num_remind; j > i; j--)
             strcpy(reminders[j], reminders[j-1]);
         
-        strcpy(reminders[i], day_str);
-        strcat(reminders[i], time_str);
+        strcpy(reminders[i], combineDaysTime);
         strcat(reminders[i], msg_str);
 
         num_remind++;
