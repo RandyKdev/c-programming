@@ -27,8 +27,8 @@ int main(void) {
         fgets(time_str, 6, stdin);
         
         read_line(msg_str, MSG_LEN);
-        
-  if(day < 0 || day > 31) continue;
+
+        if(day < 0 || day > 31) continue;
 
         strcat(strcpy(combineDaysTime, day_str), time_str);
 
