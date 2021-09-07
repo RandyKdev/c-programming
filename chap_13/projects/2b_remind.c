@@ -21,13 +21,14 @@ int main(void) {
         printf("Enter day, 24 hour time and reminder: ");
         scanf("%2d", &day);
         if(day == 0) break;
-        if(day < 0 || day > 31) continue;
-
+      
         sprintf(day_str, "%2d", day);
 
         fgets(time_str, 6, stdin);
         
         read_line(msg_str, MSG_LEN);
+        
+  if(day < 0 || day > 31) continue;
 
         strcat(strcpy(combineDaysTime, day_str), time_str);
 

@@ -20,10 +20,12 @@ int main(void) {
         printf("Enter day and reminder: ");
         scanf("%2d", &day);
         if(day == 0) break;
-        if(day < 0 || day > 31) continue;
+
         sprintf(day_str, "%2d", day);
         read_line(msg_str, MSG_LEN);
 
+        if(day < 0 || day > 31) continue;
+        
         for(i = 0; i < num_remind; i++)
             if(strcmp(day_str, reminders[i]) < 0)
                 break;
