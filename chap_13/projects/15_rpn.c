@@ -59,14 +59,18 @@ void perform_operation(char operator) {
 }
 
 void run_rpn() {
-    char ch;
+    char ch, exp[100];
+    int i = 0;
     
     printf("Enter an RPN expression: ");
-    scanf(" %c", &ch);
+    scanf("%[^\n]s", exp);
+    ch = exp[i];
+    i += 2;
     while (is_operand(ch) || is_operator(ch)) {
         if(is_operand(ch)) push(ch - '0');
         else if(is_operator(ch)) perform_operation(ch);
-        scanf(" %c", &ch);
+        ch = exp[i];
+        i += 2;
     }
 
     if(ch != '=') return;
