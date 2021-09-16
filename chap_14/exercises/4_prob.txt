@@ -1,0 +1,18 @@
+a) #define AVG(x, y) (x+y)/2
+
+4/AVG(2, 3)
+
+will evaluate to => 4/(2+3)/2 => 4/5/2
+instead of => 4/((2+3)/2) => 4/(5/2)
+
+Fix: #define AVG(x, y) (((x)+(y)) / 2)
+
+
+b) #define AREA(x, y) (x)*(y)
+
+2/AREA(2, 3)
+
+will evaluate to => 2/2*3 => 3
+instead of => 2/(2*3) => 1/3
+
+Fix: #define AREA(x, y) ((x)*(y))
