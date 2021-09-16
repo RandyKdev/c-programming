@@ -1,0 +1,21 @@
+#define TOUPPER(c) ('a'<=(c)&&(c)<='z'?(c)-'a'+'A':(c))
+
+s is a string
+i is an int
+
+a) 
+strcpy(s, "abcd");
+i = 0;
+putchar(TOUPPER(s[++i]));
+
+TOUPPER(s[++i]) => 'a'<=s[1]&&s[2]<='z'?s[3]-'a'+'A':s[4]
+=> 'D'
+
+
+b) 
+strcpy(s, "0123");
+i = 0;
+putchar(TOUPPER(s[++i]));
+
+TOUPPER(s[++i]) => 'a'<=s[1]...:s[2]
+=> '2'
