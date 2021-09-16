@@ -1,0 +1,7 @@
+#define DOUBLE(x) 2*x
+
+a) DOUBLE(1+2) => 2*1+2 => 4
+
+b) 4/DOUBLE(2) => 4/2*2 => 4
+
+c) #define DOUBLE(x) (2*(x))
