@@ -1,0 +1,26 @@
+#define GENERIC_MAX(type)       \
+type type##_max(type x, type y) \
+{                               \
+    return x > y ? x : y;       \
+}
+
+
+a) GENERIC_MAX(long)
+
+long long_max(long x, long y) {
+    return x > y ? x : y;
+}
+
+
+b) GENERIC_MAX(unsigned long)
+The problem comes when replacing the function name
+
+unsigned long unsigned long_max
+
+so it deals with "unsigned long unsigned" as the return type
+and long_max as the function name
+
+
+c) We can wrap it in parantheses as below
+
+GENERIC_MAX((unsigned long))
