@@ -1,0 +1,1 @@
+If the functions needs a particular data type as arguments
