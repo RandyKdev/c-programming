@@ -8,7 +8,7 @@ strcpy(s, "abcd");
 i = 0;
 putchar(TOUPPER(s[++i]));
 
-TOUPPER(s[++i]) => 'a'<=s[1]&&s[2]<='z'?s[3]-'a'+'A':s[4]
+TOUPPER(s[++i]) => 'a'<=s[1]&&s[2]<='z'?s[3]-'a'+'A':s[3]
 => 'D'
 
 
