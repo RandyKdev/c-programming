@@ -21,6 +21,8 @@ so it deals with "unsigned long unsigned" as the return type
 and long_max as the function name
 
 
-c) We can wrap it in parantheses as below
+c) We can typedef it
 
-GENERIC_MAX((unsigned long))
+typedef unsigned long unsigned_long
+
+GENERIC_MAX(unsigned_long)
