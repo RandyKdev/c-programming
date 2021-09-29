@@ -1,0 +1,4 @@
+Yes, there would be a problem.
+
+Because it would first check for user written file
+before checks the standard library files
