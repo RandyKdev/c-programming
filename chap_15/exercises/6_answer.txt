@@ -1,0 +1,11 @@
+a)
+All source files - main.c f1.c f2.c
+
+b)
+f1.c
+
+c)
+All source files - main.c f1.c f2.c
+
+d)
+f1.c and f2.c
