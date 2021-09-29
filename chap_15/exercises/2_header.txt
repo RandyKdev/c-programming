@@ -4,6 +4,6 @@ a) Function prototypes - It should be put in a header file
 
 b) Function definitions - It should not be put in a header file
 
-c) Macro definitions - It should not be put in a header file
+c) Macro definitions - It should be put in a header file
 
 d) Type definitions - It should be in a header file
