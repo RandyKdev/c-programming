@@ -1,0 +1,18 @@
+a) Advantages of splitting a program into multiple
+source files
+
+- Speeds up compilation
+- Increase Organisation
+- Facilatate code reuse
+- Share code between projects
+- Split coding responsibilities among programmers
+- Increases robustness of code
+- Makes code easier to read and understand
+- Makes program easily upgradable
+
+b) Disadvantages of splitting a program into multiple
+source files
+
+- Makes program heavy
+- Slows compilation
+- Additional boiler plate code
