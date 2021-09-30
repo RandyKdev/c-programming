@@ -1,5 +1,5 @@
-justify: justify.o line.o word.o
-	gcc -o justify justify.o line.o word.o
+output: justify.o line.o word.o
+	gcc -o output justify.o line.o word.o
 
 justify.o: justify.c line.h word.h
 	gcc -c justify.c
