@@ -1,0 +1,3 @@
+struct {
+    double real, imaginary;
+} c1, c2, c3;
