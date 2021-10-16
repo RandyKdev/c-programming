@@ -1,0 +1,6 @@
+struct {int x, y; } x;
+struct {int x, y; } y;
+
+The above declarations could appear in thesame program
+because the the variables in the structures are in their
+own namespace and thus, does not affect the outer scope
