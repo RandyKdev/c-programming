@@ -1,0 +1,3 @@
+struct complex make_complex(double real, double imaginary) {
+    return (struct complex) {real, imaginary};
+}
