@@ -1,0 +1,3 @@
+struct complex {
+    double real, imaginary;
+};
