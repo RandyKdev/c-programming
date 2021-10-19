@@ -14,3 +14,7 @@ struct color make_color(int red, int green, int blue) {
 
     return (struct color) {.red = red, .green = green, .blue = blue};
 }
+
+int getRed(struct color c) {
+    return c.red;
+}
