@@ -53,3 +53,14 @@ struct fraction multiply_fraction(struct fraction f1, struct fraction f2) {
     mult = reduce_fraction(mult);
     return mult;
 }
+
+struct fraction divide_fraction(struct fraction f1, struct fraction f2) {
+    f1 = reduce_fraction(f1);
+    f2 = reduce_fraction(f2);
+    
+    struct fraction div;
+    div.denominator = f2.numerator * f1.denominator;
+    div.numerator = f1.numerator * f2.denominator;
+    div = reduce_fraction(div);
+    return div;
+}
