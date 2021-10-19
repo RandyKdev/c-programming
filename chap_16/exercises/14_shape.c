@@ -31,6 +31,17 @@ double area_shape(struct shape s) {
 struct shape move_shape(struct shape s, int x, int y) {
     s.center.x += x;
     s.center.y += y;
-    
+
     return s; 
+}
+
+struct shape scale_shape(struct shape s, double c) {
+    if(s.shape_kind == CIRCLE) {
+        s.u.circle.radius *= c;
+        return s;
+    }
+
+    s.u.rectangle.height *= c;
+    s.u.rectangle.width *= c;
+    return s;
 }
