@@ -47,3 +47,11 @@ struct color brighter(struct color c) {
 
     return c;
 }
+
+struct color darker(struct color c) {
+    c.red = (int) (c.red * 0.7);
+    c.blue = (int) (c.blue * 0.7);
+    c.green = (int) (c.green * 0.7);
+
+    return c;
+}
