@@ -27,3 +27,23 @@ bool equal_color(struct color color1, struct color color2) {
     }
     return false;
 }
+
+struct color brighter(struct color c) {
+    if(c.red == 0 && c.blue == 0 && c.green == 0) {
+        return (struct color) {3, 3, 3};
+    }
+
+    if(c.red > 0 && c.red < 3) c.red = 3;
+    if(c.blue > 0 && c.blue < 3) c.blue = 3;
+    if(c.green > 0 && c.green < 3) c.green = 3;
+
+    c.red = (int) (c.red / 0.7);
+    c.blue = (int) (c.blue / 0.7);
+    c.green = (int) (c.green / 0.7);
+
+    if(c.red > 255) c.red = 255;
+    if(c.blue > 255) c.blue = 255;
+    if(c.green > 255) c.green = 255;
+
+    return c;
+}
