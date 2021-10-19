@@ -1,0 +1,12 @@
+union {
+    double a;
+    struct {
+        char b[4];
+        double c;
+        int d;
+    } e;
+    char f[4];
+} u;
+
+A C compiler will reserve 16 bytes for the above union
+if no holes are left between members
