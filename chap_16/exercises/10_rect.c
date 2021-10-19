@@ -1,3 +1,5 @@
+// NB: Considers that the plane is found in the positive x and y axis
+
 struct point {
     int x, y;
 };
@@ -23,3 +25,4 @@ struct point center_rectangle(struct rectangle r) {
 
     return center;
 }
+
