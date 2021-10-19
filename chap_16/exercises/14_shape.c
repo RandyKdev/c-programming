@@ -27,3 +27,10 @@ double area_shape(struct shape s) {
 
      return (22/7) * s.u.circle.radius * s.u.circle.radius;
 }
+
+struct shape move_shape(struct shape s, int x, int y) {
+    s.center.x += x;
+    s.center.y += y;
+    
+    return s; 
+}
