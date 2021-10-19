@@ -12,3 +12,14 @@ int area_rectangle(struct rectangle r) {
     
     return length * width; 
 }
+
+struct point center_rectangle(struct rectangle r) {
+    int length =  r.lower_right.x - r.upper_left.x;
+    int width = r.upper_left.y - r.lower_right.y;
+    
+    struct point center;
+    center.x = r.lower_right.x - (int) (length / 2);
+    center.y = r.lower_right.y + (int) (width / 2);
+
+    return center;
+}
