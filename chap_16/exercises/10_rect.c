@@ -26,3 +26,11 @@ struct point center_rectangle(struct rectangle r) {
     return center;
 }
 
+struct rectangle move_rectangle(struct rectangle r, int x, int y) {
+    r.lower_right.x += x;
+    r.lower_right.y += y;
+    r.upper_left.x += x;
+    r.upper_left.y += y;
+    
+    return r;
+}
