@@ -1,3 +1,5 @@
+#include <stdbool.h>
+
 struct color {
     int red;
     int green;
@@ -17,4 +19,11 @@ struct color make_color(int red, int green, int blue) {
 
 int getRed(struct color c) {
     return c.red;
+}
+
+bool equal_color(struct color color1, struct color color2) {
+    if(color1.red == color2.red && color1.blue == color2.blue && color1.green == color2.green) {
+        return true;
+    }
+    return false;
 }
