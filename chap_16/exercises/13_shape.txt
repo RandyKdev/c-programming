@@ -1,0 +1,22 @@
+struct shape {
+    int shape_kind;      // RECTANGLE or CIRCLE
+    struct point center; // coordinates of center
+    union {
+        struct {
+            int height, width;
+        } rectangle;
+        struct {
+            int radius;
+        } circle;
+    } u;
+} s;
+
+a) s.shape_kind = RECTANGLE; // legal
+b) s.center.x = 10; // legal
+c) s.height = 25; // not legal
+fix: s.u.rectangle.height = 25;
+d) s.u.rectangle.width = 8; // legal
+e) s.u.circle = 5; // not legal
+fix: s.u.circle.radius = 5;
+f) s.u.radius = 5; // not legal
+fix: s.u.circle.radiud = 5;
