@@ -12,3 +12,8 @@ typedef enum {
     BLACK,
     WHITE,
 } Color;
+
+typedef struct {
+    Piece piece;
+    Color color;
+} Square;
