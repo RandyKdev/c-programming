@@ -1,0 +1,8 @@
+enum {FALSE, TRUE} b;
+int i;
+
+a) b = FALSE; // safe
+b) b = i; // not safe
+c) b++; // not safe
+d) i = b; // safe
+e) i = 2 * b + 1; // safe
